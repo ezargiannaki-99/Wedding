@@ -70,9 +70,12 @@ body{
 }
 
 .hero h1{
-  margin:0;
-  font-size: clamp(40px, 8vw, 70px);
-  letter-spacing: -0.02em;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(48px, 9vw, 92px);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin: 0;
+  color: #111;
 }
 
 .date{
@@ -89,3 +92,4 @@ body{
   margin: 28px auto;
   max-width: 900px;
 }
+
