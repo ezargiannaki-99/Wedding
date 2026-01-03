@@ -1,0 +1,71 @@
+:root{
+  --text:#111;
+  --muted: rgba(0,0,0,.62);
+  --glass: rgba(255,255,255,.62);
+  --stroke: rgba(0,0,0,.07);
+  --shadow: 0 18px 50px rgba(0,0,0,.14);
+  --radius: 26px;
+}
+
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  color:var(--text);
+  text-align:center;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  overflow-x:hidden;
+  background: #fff;
+}
+
+/* Festive background */
+.bg{
+  position:fixed; inset:0; z-index:-2;
+  background:
+    radial-gradient(1100px 760px at 12% 10%, #ffe2f1 0%, transparent 56%),
+    radial-gradient(1100px 760px at 88% 18%, #e6fff8 0%, transparent 56%),
+    radial-gradient(1000px 740px at 55% 92%, #f7f1ff 0%, transparent 56%),
+    linear-gradient(180deg, #ffffff 0%, #faf7ff 55%, #ffffff 100%);
+}
+
+/* (Τα blobs είναι προαιρετικά – κρατάνε “ζωντάνια”) */
+.blob{
+  position:absolute; width:520px; height:520px; border-radius:50%;
+  filter: blur(65px); opacity:.45;
+}
+.b1{ top:-180px; left:-180px; background:#caa7ff; }
+.b2{ bottom:-220px; right:-200px; background:#7fffd4; }
+.b3{ top:35%; left:55%; background:#ffb2d6; }
+
+.hero{
+  min-height: 92vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:16px;
+  padding: 46px 18px 20px;
+}
+
+.pill{
+  display:inline-block;
+  margin:0 auto;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid var(--stroke);
+  color: rgba(0,0,0,.55);
+  width: fit-content;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.hero h1{
+  margin:0;
+  font-size: clamp(40px, 8vw, 70px);
+  letter-spacing: -0.02em;
+}
+
+.date{
+  margin:0;
+  c
