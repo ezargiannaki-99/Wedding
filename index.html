@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ιωάννης & Ευτυχία</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Festive background -->
+<div class="bg">
+  <div class="bg-overlay"></div>
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+</div>
+
+<header class="hero">
+  <p class="pill">Save the date</p>
+  <h1>Ιωάννης & Ευτυχία</h1>
+  <p class="date">Παρασκευή 17 Απριλίου 2026 · 18:00</p>
+
+  <div class="hero-buttons">
+    <a class="button dark" target="_blank" rel="noopener"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSc31Zx6MdqfsbpiN7IfCdSJIdzBZAVWv1GbHohv6gzQXAP01A/viewform?usp=dialog">
+      📩 Επιβεβαίωση παρουσίας
+    </a>
+    <a class="button" href="#locations">📍 Τοποθεσίες</a>
+  </div>
+
+  <!-- Countdown like your sample -->
+  <div class="countdown-card">
+    <div class="countdown-title">
+      <span class="script">countdown</span>
+      <span class="clock">🕒</span>
+    </div>
+    <div class="countdown">
+      <div class="cd"><span id="d">—</span><small>ΗΜΕΡΕΣ</small></div>
+      <div class="sep">:</div>
+      <div class="cd"><span id="h">—</span><small>ΩΡΕΣ</small></div>
+      <div class="sep">:</div>
+      <div class="cd"><span id="m">—</span><small>ΛΕΠΤΑ</small></div>
+      <div class="sep">:</div>
+      <div class="cd"><span id="s">—</span><small>ΔΕΥΤ.</small></div>
+    </div>
+  </div>
+</header>
+
+<section class="section glass">
+  <p class="intro">
+    Με χαρά σας προσκαλούμε να μοιραστείτε μαζί μας
+    μια από τις πιο όμορφες στιγμές της ζωής μας!
+  </p>
+</section>
+
+<section id="locations" class="section-title-wrap">
+  <h2 class="big-title">Τοποθεσίες</h2>
+  <p class="muted">Δείτε κουμπί πλοήγησης & ζωντανό χάρτη.</p>
+</section>
+
+<!-- CHURCH SECTION with saint background -->
+<section class="section glass saint-bg reveal">
+  <div class="section-head">
+    <h2>ΤΟ ΜΥΣΤΗΡΙΟ</h2>
+    <p>
+      ⛪ Ιερός Ναός Αγίου Τιμοθέου και Αγίας Μαύρας,<br>
+      Ηλιούπολη ΤΚ: 16342 · Ώρα 18:00
+    </p>
+    <a class="button" target="_blank" rel="noopener"
+       href="https://maps.app.goo.gl/vNykeE1Lnr1oiBZy7">
+      📍 Δείτε την τοποθεσία
+    </a>
+  </div>
+
+  <!-- Live map (embed) -->
+  <div class="map-wrap">
+    <iframe
+      title="Χάρτης - Μυστήριο"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Ιερός%20Ναός%20Αγίου%20Τιμοθέου%20και%20Αγίας%20Μαύρας%20Ηλιούπολη&output=embed">
+    </iframe>
+  </div>
+</section>
+
+<section class="section glass reveal">
+  <div class="section-head">
+    <h2>Η ΔΕΞΙΩΣΗ</h2>
+    <p>Κτήμα XYZ</p>
+    <a class="button" target="_blank" rel="noopener"
+       href="https://maps.app.goo.gl/Lkci4WP3u97rmkrp7">
+      📍 Οδηγίες πρόσβασης
+    </a>
+  </div>
+
+  <div class="map-wrap">
+    <iframe
+      title="Χάρτης - Δεξίωση"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Κτήμα%20XYZ&output=embed">
+    </iframe>
+  </div>
+</section>
+
+<section class="section glass reveal">
+  <h2>RSVP</h2>
+  <p>Παρακαλούμε επιβεβαιώστε την παρουσία σας έως <strong>5 Απριλίου 2026</strong></p>
+  <a class="button dark" target="_blank" rel="noopener"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSc31Zx6MdqfsbpiN7IfCdSJIdzBZAVWv1GbHohv6gzQXAP01A/viewform?usp=dialog">
+    📩 Επιβεβαίωση παρουσίας
+  </a>
+</section>
+
+<footer class="footer">
+  <p>Σας περιμένουμε 🤍<br><strong>Ιωάννης & Ευτυχία</strong></p>
+</footer>
+
+<script>
+  // Ρύθμιση ημερομηνίας γάμου (Ελλάδα ώρα)
+  const weddingDate = new Date("2026-04-17T18:00:00");
+
+  const pad = (n) => String(n).padStart(2, "0");
+  function tick(){
+    const now = new Date();
+    let diff = weddingDate - now;
+
+    const dEl = document.getElementById("d");
+    const hEl = document.getElementById("h");
+    const mEl = document.getElementById("m");
+    const sEl = document.getElementById("s");
+
+    if (diff <= 0){
+      dEl.textContent = "0";
+      hEl.textContent = "00";
+      mEl.textContent = "00";
+      sEl.textContent = "00";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff / (1000*60*60)) % 24);
+    const mins = Math.floor((diff / (1000*60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    dEl.textContent = days;
+    hEl.textContent = pad(hours);
+    mEl.textContent = pad(mins);
+    sEl.textContent = pad(secs);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // micro reveal
+  const els = document.querySelectorAll(".reveal");
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add("in"); });
+  }, { threshold: 0.12 });
+  els.forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
