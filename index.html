@@ -10,129 +10,238 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=12" />
+  <link rel="stylesheet" href="style.css?v=30" />
 </head>
+
 <body>
 
-<header class="hero fade-in">
-  <h1 class="names">Ιωάννης & Ευτυχία</h1>
-  <p class="date">Παρασκευή 17 Απριλίου 2026 · 18:00</p>
+  <main class="page">
+    <section class="paper fade-in">
 
-  <div class="countdown fade-in" aria-label="Countdown">
-    <div class="cd-line">
-      <span id="d">00</span><span class="sep">:</span>
-      <span id="h">00</span><span class="sep">:</span>
-      <span id="m">00</span><span class="sep">:</span>
-      <span id="s">00</span>
-    </div>
-    <div class="cd-labels">
-      <span>Ημέρες</span><span>Ώρες</span><span>Λεπτά</span><span>Δευτ.</span>
-    </div>
-  </div>
-</header>
+      <!-- HERO -->
+      <header class="hero">
+        <h1 class="names">Ιωάννης & Ευτυχία</h1>
+        <p class="subtitle">Παντρευόμαστε!</p>
+        <p class="date">Παρασκευή 17 Απριλίου 2026 · 18:00</p>
+      </header>
 
-<section class="card fade-in">
-  <p class="intro">
-    Με χαρά σας προσκαλούμε να μοιραστείτε μαζί μας
-    μια από τις πιο όμορφες στιγμές της ζωής μας!
-  </p>
-</section>
+      <!-- COUNTDOWN (κουτάκια + :) -->
+      <section class="countdown-wrap" aria-label="Countdown">
+        <h2 class="section-title">Countdown</h2>
 
-<section class="title fade-in">
-  <h2>Τοποθεσίες</h2>
-  <p>Δείτε κουμπί πλοήγησης & ζωντανό χάρτη.</p>
-</section>
+        <div class="countdown-row" role="group" aria-label="Χρονόμετρο αντίστροφης μέτρησης">
+          <div class="cd-group">
+            <div class="cd-box"><span id="d">00</span></div>
+            <div class="cd-label">Ημέρες</div>
+          </div>
 
-<section class="card fade-in">
-  <h3>Το Μυστήριο</h3>
-  <p>
-    ⛪ Ιερός Ναός Αγίου Τιμοθέου και Αγίας Μαύρας,<br>
-    Ηλιούπολη ΤΚ: 16342 · Ώρα 18:00
-  </p>
+          <div class="cd-sep">:</div>
 
-  <a class="btn" target="_blank" rel="noopener"
-     href="https://maps.app.goo.gl/vNykeE1Lnr1oiBZy7">
-    📍 Δείτε την τοποθεσία
-  </a>
+          <div class="cd-group">
+            <div class="cd-box"><span id="h">00</span></div>
+            <div class="cd-label">Ώρες</div>
+          </div>
 
-  <div class="map">
-    <iframe
-      title="Χάρτης - Μυστήριο"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps?q=Ιερός%20Ναός%20Αγίου%20Τιμοθέου%20και%20Αγίας%20Μαύρας%20Ηλιούπολη&output=embed">
-    </iframe>
-  </div>
-</section>
+          <div class="cd-sep">:</div>
 
-<section class="card fade-in">
-  <h3>Η Δεξίωση</h3>
-  <p>Κτήμα XYZ</p>
+          <div class="cd-group">
+            <div class="cd-box"><span id="m">00</span></div>
+            <div class="cd-label">Λεπτά</div>
+          </div>
 
-  <a class="btn" target="_blank" rel="noopener"
-     href="https://maps.app.goo.gl/Lkci4WP3u97rmkrp7">
-    📍 Οδηγίες πρόσβασης
-  </a>
+          <div class="cd-sep">:</div>
 
-  <div class="map">
-    <iframe
-      title="Χάρτης - Δεξίωση"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps?q=Κτήμα%20XYZ&output=embed">
-    </iframe>
-  </div>
-</section>
+          <div class="cd-group">
+            <div class="cd-box"><span id="s">00</span></div>
+            <div class="cd-label">Δευτ.</div>
+          </div>
+        </div>
+      </section>
 
-<section class="card fade-in">
-  <h3>RSVP</h3>
-  <p>Παρακαλούμε επιβεβαιώστε την παρουσία σας έως <strong>5 Απριλίου 2026</strong></p>
+      <!-- INVITE TEXT -->
+      <section class="card fade-in">
+        <p class="intro">
+          Με χαρά σας προσκαλούμε να μοιραστείτε μαζί μας
+          μια από τις πιο όμορφες στιγμές της ζωής μας!
+        </p>
+      </section>
 
-  <a class="btn dark" target="_blank" rel="noopener"
-     href="https://docs.google.com/forms/d/e/1FAIpQLSc31Zx6MdqfsbpiN7IfCdSJIdzBZAVWv1GbHohv6gzQXAP01A/viewform?usp=dialog">
-    📩 Επιβεβαίωση παρουσίας
-  </a>
-</section>
+      <!-- LOCATIONS -->
+      <section class="card fade-in">
+        <h2 class="card-title">Το Μυστήριο</h2>
+        <p class="card-text">
+          ⛪ Ιερός Ναός Αγίου Τιμοθέου και Αγίας Μαύρας,<br>
+          Ηλιούπολη ΤΚ: 16342 · Ώρα 18:00
+        </p>
 
-<footer class="footer fade-in">
-  <p>Σας περιμένουμε 🤍<br><strong>Ιωάννης & Ευτυχία</strong></p>
-</footer>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://maps.app.goo.gl/vNykeE1Lnr1oiBZy7">
+          📍 Δείτε την τοποθεσία
+        </a>
 
-<script>
-  // Countdown (17/04/2026 18:00 Ελλάδα - Απρίλιος: συνήθως θερινή ώρα)
-  const weddingDate = new Date("2026-04-17T18:00:00+03:00");
-  const pad = n => String(n).padStart(2,"0");
+        <div class="map">
+          <iframe
+            title="Χάρτης - Μυστήριο"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Ιερός%20Ναός%20Αγίου%20Τιμοθέου%20και%20Αγίας%20Μαύρας%20Ηλιούπολη&output=embed">
+          </iframe>
+        </div>
+      </section>
 
-  function updateCountdown(){
-    const now = new Date();
-    let diff = weddingDate - now;
-    if(diff < 0) diff = 0;
+      <section class="card fade-in">
+        <h2 class="card-title">Η Δεξίωση</h2>
+        <p class="card-text">Κτήμα XYZ</p>
 
-    const days = Math.floor(diff / (1000*60*60*24));
-    const hours = Math.floor((diff / (1000*60*60)) % 24);
-    const mins = Math.floor((diff / (1000*60)) % 60);
-    const secs = Math.floor((diff / 1000) % 60);
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://maps.app.goo.gl/Lkci4WP3u97rmkrp7">
+          📍 Οδηγίες πρόσβασης
+        </a>
 
-    document.getElementById("d").textContent = pad(days);
-    document.getElementById("h").textContent = pad(hours);
-    document.getElementById("m").textContent = pad(mins);
-    document.getElementById("s").textContent = pad(secs);
-  }
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
+        <div class="map">
+          <iframe
+            title="Χάρτης - Δεξίωση"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Κτήμα%20XYZ&output=embed">
+          </iframe>
+        </div>
+      </section>
 
-  // Fade-in
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        e.target.classList.add("visible");
-        observer.unobserve(e.target);
+      <!-- KOUMPAROI -->
+      <section class="card fade-in">
+        <h2 class="card-title">Κουμπάροι</h2>
+
+        <!-- Βάλε εδώ τα πραγματικά ονόματα -->
+        <div class="list">
+          <div class="list-item">
+            <div class="dot"></div>
+            <div class="list-text"><strong>Όνομα Κουμπάρου 1</strong></div>
+          </div>
+          <div class="list-item">
+            <div class="dot"></div>
+            <div class="list-text"><strong>Όνομα Κουμπάρας 2</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- IBAN / IRIS -->
+      <section class="card fade-in">
+        <h2 class="card-title">Δώρο</h2>
+        <p class="card-text">
+          Αν επιθυμείτε, μπορείτε να μας βοηθήσετε στο νέο μας ξεκίνημα μέσω IBAN ή IRIS.
+        </p>
+
+        <!-- Βάλε τα πραγματικά σου στοιχεία -->
+        <div class="gift-grid">
+          <div class="gift-box">
+            <div class="gift-label">IBAN</div>
+            <div class="gift-value" id="ibanText">GR00 0000 0000 0000 0000 0000 000</div>
+            <button class="btn small" type="button" data-copy="#ibanText">📋 Αντιγραφή</button>
+          </div>
+
+          <div class="gift-box">
+            <div class="gift-label">IRIS</div>
+            <div class="gift-value" id="irisText">+30 69X XXX XXXX</div>
+            <button class="btn small" type="button" data-copy="#irisText">📋 Αντιγραφή</button>
+          </div>
+        </div>
+
+        <p class="hint">
+          * Τα κουμπιά αντιγραφής δουλεύουν στα περισσότερα κινητά/PC. Αν δεν δουλέψουν, κάντε παρατεταμένο πάτημα.
+        </p>
+      </section>
+
+      <!-- RSVP -->
+      <section class="card fade-in">
+        <h2 class="card-title">RSVP</h2>
+        <p class="card-text">
+          Παρακαλούμε επιβεβαιώστε την παρουσία σας έως <strong>5 Απριλίου 2026</strong>.
+        </p>
+        <a class="btn dark" target="_blank" rel="noopener"
+           href="https://docs.google.com/forms/d/e/1FAIpQLSc31Zx6MdqfsbpiN7IfCdSJIdzBZAVWv1GbHohv6gzQXAP01A/viewform?usp=dialog">
+          📩 Επιβεβαίωση παρουσίας
+        </a>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer fade-in">
+        <p>Σας περιμένουμε 🤍<br><strong>Ιωάννης & Ευτυχία</strong></p>
+      </footer>
+
+    </section>
+  </main>
+
+  <script>
+    // Countdown: 17/04/2026 18:00 Ελλάδας (Απρίλιος = συνήθως +03:00)
+    const weddingDate = new Date("2026-04-17T18:00:00+03:00");
+    const pad = n => String(n).padStart(2, "0");
+
+    function updateCountdown(){
+      const now = new Date();
+      let diff = weddingDate - now;
+      if(diff < 0) diff = 0;
+
+      const days = Math.floor(diff / (1000*60*60*24));
+      const hours = Math.floor((diff / (1000*60*60)) % 24);
+      const minutes = Math.floor((diff / (1000*60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("d").textContent = pad(days);
+      document.getElementById("h").textContent = pad(hours);
+      document.getElementById("m").textContent = pad(minutes);
+      document.getElementById("s").textContent = pad(seconds);
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Copy-to-clipboard (IBAN / IRIS)
+    async function copyTextFromSelector(sel){
+      const el = document.querySelector(sel);
+      if(!el) return;
+      const text = (el.textContent || "").trim();
+      try{
+        await navigator.clipboard.writeText(text);
+        return true;
+      }catch(e){
+        // fallback
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        try{
+          document.execCommand("copy");
+          document.body.removeChild(ta);
+          return true;
+        }catch(err){
+          document.body.removeChild(ta);
+          return false;
+        }
       }
-    });
-  }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+    }
 
-  document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-</script>
+    document.querySelectorAll("[data-copy]").forEach(btn=>{
+      btn.addEventListener("click", async ()=>{
+        const sel = btn.getAttribute("data-copy");
+        const ok = await copyTextFromSelector(sel);
+        const old = btn.textContent;
+        btn.textContent = ok ? "✅ Αντιγράφηκε" : "❌ Δεν αντιγράφηκε";
+        setTimeout(()=> btn.textContent = old, 1200);
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add("visible");
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -50px 0px" });
+
+    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
