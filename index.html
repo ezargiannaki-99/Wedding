@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ιωάννης & Ευτυχία</title>
 
+  <!-- Safe fonts (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=12" />
 </head>
 <body>
 
-<header class="hero hero-paper fade-in">
-  <h1>Ιωάννης & Ευτυχία</h1>
+<header class="hero fade-in">
+  <h1 class="names">Ιωάννης & Ευτυχία</h1>
   <p class="date">Παρασκευή 17 Απριλίου 2026 · 18:00</p>
 
-  <!-- Countdown -->
-  <div class="countdown-elegant">
-    <div class="cd-title">countdown <span class="clock">🕒</span></div>
-
-    <div class="cd-line" aria-label="Countdown">
+  <div class="countdown fade-in" aria-label="Countdown">
+    <div class="cd-line">
       <span id="d">00</span><span class="sep">:</span>
       <span id="h">00</span><span class="sep">:</span>
       <span id="m">00</span><span class="sep">:</span>
       <span id="s">00</span>
     </div>
-
     <div class="cd-labels">
       <span>Ημέρες</span><span>Ώρες</span><span>Λεπτά</span><span>Δευτ.</span>
     </div>
   </div>
 </header>
 
-<section class="section glass fade-in">
+<section class="card fade-in">
   <p class="intro">
     Με χαρά σας προσκαλούμε να μοιραστείτε μαζί μας
     μια από τις πιο όμορφες στιγμές της ζωής μας!
   </p>
 </section>
 
-<section id="locations" class="section-title-wrap fade-in">
-  <h2 class="big-title">Τοποθεσίες</h2>
-  <p class="muted">Δείτε κουμπί πλοήγησης & ζωντανό χάρτη.</p>
+<section class="title fade-in">
+  <h2>Τοποθεσίες</h2>
+  <p>Δείτε κουμπί πλοήγησης & ζωντανό χάρτη.</p>
 </section>
 
-<section class="section glass saint-bg fade-in">
-  <div class="section-head">
-    <h2>ΤΟ ΜΥΣΤΗΡΙΟ</h2>
-    <p>
-      ⛪ Ιερός Ναός Αγίου Τιμοθέου και Αγίας Μαύρας,<br>
-      Ηλιούπολη ΤΚ: 16342 · Ώρα 18:00
-    </p>
-    <a class="button" target="_blank" rel="noopener"
-       href="https://maps.app.goo.gl/vNykeE1Lnr1oiBZy7">
-      📍 Δείτε την τοποθεσία
-    </a>
-  </div>
+<section class="card fade-in">
+  <h3>Το Μυστήριο</h3>
+  <p>
+    ⛪ Ιερός Ναός Αγίου Τιμοθέου και Αγίας Μαύρας,<br>
+    Ηλιούπολη ΤΚ: 16342 · Ώρα 18:00
+  </p>
 
-  <div class="map-wrap">
+  <a class="btn" target="_blank" rel="noopener"
+     href="https://maps.app.goo.gl/vNykeE1Lnr1oiBZy7">
+    📍 Δείτε την τοποθεσία
+  </a>
+
+  <div class="map">
     <iframe
       title="Χάρτης - Μυστήριο"
       loading="lazy"
@@ -69,17 +65,16 @@
   </div>
 </section>
 
-<section class="section glass fade-in">
-  <div class="section-head">
-    <h2>Η ΔΕΞΙΩΣΗ</h2>
-    <p>Κτήμα XYZ</p>
-    <a class="button" target="_blank" rel="noopener"
-       href="https://maps.app.goo.gl/Lkci4WP3u97rmkrp7">
-      📍 Οδηγίες πρόσβασης
-    </a>
-  </div>
+<section class="card fade-in">
+  <h3>Η Δεξίωση</h3>
+  <p>Κτήμα XYZ</p>
 
-  <div class="map-wrap">
+  <a class="btn" target="_blank" rel="noopener"
+     href="https://maps.app.goo.gl/Lkci4WP3u97rmkrp7">
+    📍 Οδηγίες πρόσβασης
+  </a>
+
+  <div class="map">
     <iframe
       title="Χάρτης - Δεξίωση"
       loading="lazy"
@@ -89,10 +84,11 @@
   </div>
 </section>
 
-<section class="section glass fade-in">
-  <h2>RSVP</h2>
+<section class="card fade-in">
+  <h3>RSVP</h3>
   <p>Παρακαλούμε επιβεβαιώστε την παρουσία σας έως <strong>5 Απριλίου 2026</strong></p>
-  <a class="button dark" target="_blank" rel="noopener"
+
+  <a class="btn dark" target="_blank" rel="noopener"
      href="https://docs.google.com/forms/d/e/1FAIpQLSc31Zx6MdqfsbpiN7IfCdSJIdzBZAVWv1GbHohv6gzQXAP01A/viewform?usp=dialog">
     📩 Επιβεβαίωση παρουσίας
   </a>
@@ -103,31 +99,29 @@
 </footer>
 
 <script>
-  // Countdown (Ελλάδα ώρα)
-  const weddingDate = new Date("2026-04-17T18:00:00");
-  const pad = n => String(n).padStart(2, "0");
+  // Countdown (17/04/2026 18:00 Ελλάδα - Απρίλιος: συνήθως θερινή ώρα)
+  const weddingDate = new Date("2026-04-17T18:00:00+03:00");
+  const pad = n => String(n).padStart(2,"0");
 
   function updateCountdown(){
     const now = new Date();
     let diff = weddingDate - now;
-    if(diff <= 0) diff = 0;
+    if(diff < 0) diff = 0;
 
     const days = Math.floor(diff / (1000*60*60*24));
     const hours = Math.floor((diff / (1000*60*60)) % 24);
-    const minutes = Math.floor((diff / (1000*60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
+    const mins = Math.floor((diff / (1000*60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
 
     document.getElementById("d").textContent = pad(days);
     document.getElementById("h").textContent = pad(hours);
-    document.getElementById("m").textContent = pad(minutes);
-    document.getElementById("s").textContent = pad(seconds);
+    document.getElementById("m").textContent = pad(mins);
+    document.getElementById("s").textContent = pad(secs);
   }
   updateCountdown();
   setInterval(updateCountdown, 1000);
-</script>
 
-<script>
-  // Fade-in on scroll
+  // Fade-in
   const observer = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
       if(e.isIntersecting){
