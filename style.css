@@ -316,17 +316,16 @@ body{
 }
 
 .list-item{
-  justify-content: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;   /* ← ΤΟ ΚΡΙΣΙΜΟ */
+  align-items: center;      /* κεντράρισμα */
+  gap: 4px;
 }
 .list-text{
-  display:block;        /* ← κάνει line break */
-  font-size:15px;
-  color: rgba(0,0,0,.65);
-  margin-top:2px;
   width: 100%;
   text-align: center;
 }
+
 
 
 
