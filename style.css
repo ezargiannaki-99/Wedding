@@ -320,12 +320,13 @@ body{
   text-align: center;
 }
 .list-text{
-  width: 100%;
-  text-align: center;
   display:block;        /* ← κάνει line break */
   font-size:15px;
   color: rgba(0,0,0,.65);
   margin-top:2px;
+  width: 100%;
+  text-align: center;
 }
+
 
 
