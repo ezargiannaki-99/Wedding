@@ -311,4 +311,16 @@ body{
   .map iframe{ height: 260px; }
 }
 
+.list{
+  text-align: center;
+}
+
+.list-item{
+  justify-content: center;
+  text-align: center;
+}
+.list-text{
+  width: 100%;
+  text-align: center;
+}
 
