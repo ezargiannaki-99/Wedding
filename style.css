@@ -12,7 +12,7 @@
 
   --heading:"Playfair Display", serif;
   --body:"Montserrat", system-ui, sans-serif;
-  --cursive:"Great Vibes", cursive;
+  --cursive:"Allura", cursive;
 }
 
 *{ box-sizing:border-box; }
@@ -310,3 +310,4 @@ body{
   .gift-grid{ grid-template-columns: 1fr; }
   .map iframe{ height: 260px; }
 }
+
