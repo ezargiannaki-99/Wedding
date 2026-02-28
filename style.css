@@ -28,20 +28,21 @@ body{
 
 /* Κεντραρισμένο “χαρτί” στη μέση της σελίδας */
 .page{
-  min-height:100vh;
-  padding: 0;
+  min-height: 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding: 34px 14px 60px;
 }
 
 .paper{
-  width: 100%;
-  max-width: none;
-
-  background: transparent;   /* αφαιρεί το λευκό πλαίσιο */
-  border: none;              /* αφαιρεί το περίγραμμα */
-  box-shadow: none;          /* αφαιρεί τη σκιά */
-
-  padding: 0;
-  text-align: center;
+  width: min(920px, 100%);
+  background: var(--paper);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 16px 10px;
+  text-align:center;
 }
 
 /* HERO */
@@ -336,6 +337,7 @@ body{
   width: 100%;
   text-align: center;
 }
+
 
 
 
