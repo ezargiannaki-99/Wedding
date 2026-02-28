@@ -12,7 +12,7 @@
 
   --heading:"Playfair Display", serif;
   --body:"Montserrat", system-ui, sans-serif;
-  --cursive: "Comfortaa", cursive;
+  --cursive: "Marck Script", cursive;
 }
 
 *{ box-sizing:border-box; }
@@ -337,6 +337,7 @@ body{
   width: 100%;
   text-align: center;
 }
+
 
 
 
