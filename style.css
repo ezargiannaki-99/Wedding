@@ -279,7 +279,7 @@ body{
 
 .gift-label{
   font-family: var(--heading);
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: .18em;
   text-transform: uppercase;
   font-size: 12px;
@@ -289,8 +289,7 @@ body{
 
 .gift-value{
   font-family: var(--heading);
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 800;
   color: rgba(0,0,0,.62);
   margin-bottom: 12px;
   word-break: break-word;
@@ -337,6 +336,7 @@ body{
   width: 100%;
   text-align: center;
 }
+
 
 
 
