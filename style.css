@@ -151,15 +151,24 @@ body{
 }
 
 .card-title{
-  margin: 0 0 12px;
-  font-family: var(--heading);
-  font-weight: 700;
-  font-size: 13px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* γραμμή από κάτω */
+.card-title::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:0;
+  width:60px;
+  height:1px;
+  opacity:.6;
   letter-spacing: .18em;
-  text-transform: uppercase;
-  color: rgba(0,0,0,.62);
-  text-decoration: underline;
-  text-underline-offset: 6px;
+  background: var(--sage); /* ίδιο χρώμα με κουμπιά */
+  border-radius:2px;
 }
 
 .card-text{
@@ -327,6 +336,7 @@ body{
   width: 100%;
   text-align: center;
 }
+
 
 
 
